@@ -1,0 +1,36 @@
+{
+    "personalInformation": {
+      "firstName": "Mohamed",
+      "lastName": "Mohamud",
+      "email": "mohamed.mohamud3222@gmail.com",
+      "phone": "123-456-7890",
+      "address": "Hudiksvall"
+    },
+    "summary": "A dedicated professional with expertise in Systemdevoloper.",
+    "education": {
+      
+        "degree": "University of Science in IT",
+        "school": "Edugarde",
+        "graduationYear": 2025
+      
+    },
+    "skills": {
+      "skill1":"C#",
+      "skill2":"Sql database",
+      "skill3":"frontend"
+     
+    },
+    "languages": [
+      {
+        "Id": 1,
+        "language": "English",
+        "proficiency": "Fluent"
+      },
+      {
+        "Id": 2,
+        "language": "Swedish",
+        "proficiency": "Fluent"
+      }
+      
+    ]
+  }

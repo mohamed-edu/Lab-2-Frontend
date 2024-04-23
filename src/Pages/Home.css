@@ -1,0 +1,143 @@
+
+.main-home{
+    margin: 0;
+    height: 100vh;
+    width: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+
+.container{
+    font-size: 10px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+}
+.circle{
+    font-size:60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12em;
+    height: 12em;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 0 0 0.3em rgb(54, 51, 51);
+}
+
+
+.circle2{
+    font-size:60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8em;
+    height: 8em;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 0 0 0.3em rgb(54, 51, 51);
+}
+.sun{
+    position: absolute;
+    top: 43em;
+    left: -3em;
+    width: 10em;
+    height: 10em;
+    background-image: url("images/sun.jpeg") ;
+    border-radius: 50%;
+    box-shadow: 0 0 10em rgb(215, 178, 178);
+
+}
+.earth {
+    position: absolute;
+    border-style: solid;
+    border-color: rgb(42, 44, 35) transparent transparent;
+    border-width: 0.1em o.1em 0 0;
+    border-radius: 50%;
+    box-shadow: 0 0 0.7em rgb(75, 75, 74);
+  
+
+
+}
+.moon {
+    position: absolute;
+    border-style: solid;
+    border-color: rgb(51, 53, 51) transparent transparent;
+    border-width: 0.1em o.1em 0 0;
+    border-radius: 50%;
+    box-shadow: 202m 0 0.7em rgb(163, 163, 145);
+
+}
+.earth{
+   
+    top: 33.2em;
+    left: -14.5em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 36.5s linear infinite;
+
+}
+
+.moon{
+    top: 0;
+    right: 0;
+    width: 8em;
+    height: 8em;
+    animation: orbit 2.7s linear infinite;
+
+}
+.earth::before,.moon::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+
+}
+.earth::before{
+    top: 2.8em;
+    right: 2.8em;
+    width: 3em;
+    height: 3em;
+    background-image: url("images/earth.jpeg");
+    box-shadow: 0 0.2em 0.4em lightblue;
+    animation: orbit2 96.7s linear infinite;
+
+}
+.moon::before{
+    top: 0.8em;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: silver;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+@keyframes orbit2{
+    to{
+        transform: rotate(180deg);
+    }
+}

@@ -1,0 +1,21 @@
+
+.container{
+    height: 100%;
+    width: auto;
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    
+}
+.cvcontent{
+    background-color: #51568b;
+    color: white;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+
+}
+
+/* fixa home page så att den inte arver p och h2 taggen.
+ snyygga cv sida. gör påskägg och portfolio 
+ sen hämta alla andra från lab 1 och publicera sidan genom github
+ */

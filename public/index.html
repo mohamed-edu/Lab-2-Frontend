@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+   <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -25,10 +25,17 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    
+    <div id="modal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; border: 2px solid black;">
+      <p>Easter Egg 2 activated!</p>
+      <p>Fun message here...</p>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +46,23 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+    <script>
+      
+  
+      // Easter Egg 2: Tangentbordskombination
+      const secretCode = '1337';
+      let pressedKeys = '';
+  
+      window.addEventListener('keyup', (event) => {
+        pressedKeys += event.key;
+        pressedKeys = pressedKeys.slice(-secretCode.length); // Håll bara de senaste tangenterna
+  
+        if (pressedKeys === secretCode) {
+          const modal = document.getElementById('modal');
+          modal.style.display = 'block'; // Visa modal
+        }
+      });
+    </script>
+   
+      </body>
 </html>
